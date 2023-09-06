@@ -1,12 +1,13 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:pofy/features/auth/view/forget_password_screen.dart';
 import 'package:pofy/screens/home_screen.dart';
-import 'package:pofy/screens/signin_screen.dart';
-import 'package:pofy/screens/signup_screen.dart';
+import 'package:pofy/features/auth/view/signin_screen.dart';
+import 'package:pofy/features/auth/view/signup_screen.dart';
 
 final goRouterProvider = Provider((ref) {
   return GoRouter(
-    initialLocation: '/sign-in',
+    initialLocation: '/forgot-password',
     routes: [
       GoRoute(
         path: '/sign-in',
@@ -19,6 +20,10 @@ final goRouterProvider = Provider((ref) {
       GoRoute(
         path: '/',
         builder: (context, state) => const HomeScreen(),
+      ),
+      GoRoute(
+        path: '/forgot-password',
+        builder: (context, state) =>  ForgetPasswordScreen(),
       )
     ],
   );
