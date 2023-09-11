@@ -5,21 +5,18 @@ import 'package:pofy/features/auth/views/signup.dart';
 import 'package:pofy/features/auth/views/switcher.dart';
 
 final goRouterProvider = Provider((ref) {
-  return GoRouter(
-    initialLocation: '/sign-in',
-    routes: [
-      GoRoute(
-        path: '/sign-in',
-        builder: (context, state) => const SwitcherScreen(),
-      ),
-      GoRoute(
-        path: '/sign-up',
-        builder: (context, state) => const SizedBox(),
-      ),
-      GoRoute(
-        path: '/',
-        builder: (context, state) => const SizedBox(),
-      )
-    ],
-  );
+  return GoRouter(initialLocation: '/forgot-password', routes: [
+    GoRoute(
+      path: '/sign-in',
+      builder: (context, state) => const SwitcherScreen(),
+    ),
+    GoRoute(
+      path: '/sign-up',
+      builder: (context, state) => const SizedBox(),
+    ),
+    GoRoute(
+      path: '/',
+      builder: (context, state) => const SizedBox(),
+    )
+  ]);
 });
