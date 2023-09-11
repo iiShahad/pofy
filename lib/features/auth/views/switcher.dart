@@ -9,7 +9,6 @@ class SwitcherScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    print(ref.watch(currentAuthScreenProvider));
     return Scaffold(
       body: ref.watch(currentAuthScreenProvider) == AuthScreens.signup
           ? const SignUpScreen()
