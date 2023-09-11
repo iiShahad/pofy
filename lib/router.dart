@@ -1,8 +1,8 @@
+import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:pofy/screens/home_screen.dart';
-import 'package:pofy/screens/signin_screen.dart';
-import 'package:pofy/screens/signup_screen.dart';
+import 'package:pofy/features/auth/views/signup.dart';
+import 'package:pofy/features/auth/views/switcher.dart';
 
 final goRouterProvider = Provider((ref) {
   return GoRouter(
@@ -10,15 +10,15 @@ final goRouterProvider = Provider((ref) {
     routes: [
       GoRoute(
         path: '/sign-in',
-        builder: (context, state) => const SignInScreen(),
+        builder: (context, state) => const SwitcherScreen(),
       ),
       GoRoute(
         path: '/sign-up',
-        builder: (context, state) => const SignUpScreen(),
+        builder: (context, state) => const SizedBox(),
       ),
       GoRoute(
         path: '/',
-        builder: (context, state) => const HomeScreen(),
+        builder: (context, state) => const SizedBox(),
       )
     ],
   );
