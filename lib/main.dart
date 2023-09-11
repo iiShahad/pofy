@@ -5,17 +5,14 @@ import 'package:pofy/router.dart';
 
 void main() {
   runApp(
-    ProviderScope(
+    const ProviderScope(
       child: MyApp(),
     ),
   );
 }
 
 class MyApp extends ConsumerWidget {
-  MyApp({super.key});
-
-  final ColorScheme colorScheme =
-      ColorScheme.fromSeed(seedColor: primaryColor, secondary: secondaryColor);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
