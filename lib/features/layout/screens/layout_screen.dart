@@ -28,7 +28,6 @@ class Layout extends StatelessWidget {
         elevation: 0,
         labelBehavior: NavigationDestinationLabelBehavior.alwaysHide,
         indicatorColor: Colors.transparent,
-
         selectedIndex: navigationShell.currentIndex,
         onDestinationSelected: _goBranch,
         destinations: const [

@@ -4,12 +4,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 class Home extends ConsumerWidget {
   const Home({super.key});
 
-
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-
-    return Scaffold(
-      body: Center(child: Text("Home"),),
+    return const Scaffold(
+      body: Center(
+        child: Text("Home"),
+      ),
     );
   }
 }

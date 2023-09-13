@@ -4,12 +4,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 class Portfolio extends ConsumerWidget {
   const Portfolio({super.key});
 
-
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-
-    return Scaffold(
-      body: Center(child: Text("Portfolio"),),
+    return const Scaffold(
+      body: Center(
+        child: Text("Portfolio"),
+      ),
     );
   }
 }
